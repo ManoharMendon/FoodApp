@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/menu_view_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:lineSpacingExtra="4sp"
+                    android:text="@string/view_more"
+                    android:textColor="#FF7C32"
+                    android:textSize="16sp"
+                    android:translationY="-1.8sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.798"
+                    app:layout_constraintStart_toEndOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@+id/restaurant_recyclerview" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/food_recyclerview"
+                    android:layout_width="382dp"
+                    android:layout_height="203dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="151dp"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="10dp"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/viga"
+                    android:gravity="top"
+                    android:lineSpacingExtra="5sp"
+                    android:text="@string/popular_menu"
+                    android:textColor="#09051C"
+                    android:textSize="20sp"
+                    android:translationY="-2.25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.115"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/restaurant_recyclerview" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/restaurant_recyclerview"
+                    android:layout_width="404dp"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/img_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.491"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/food_search_text">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="170dp"
+                        android:layout_height="71dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/viga"
+                        android:gravity="top"
+                        android:lineSpacingExtra="5sp"
+                        android:text="@string/special_deal_for_today"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:translationY="-2.55sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="121dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rect4"
+                        android:text="@string/buy_now"
+                        android:textColor="#53E88B"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.786"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="290dp"
+                    android:layout_height="129dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="16dp"
+
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:gravity="top"
+                    android:letterSpacing="0.01"
+                    android:lineSpacingExtra="9sp"
+                    android:text="@string/title_text"
+                    android:textColor="#09051C"
+                    android:textSize="36sp"
+                    android:translationY="-4.65sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.247"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/food_search_text"
+                    android:layout_width="350dp"
+                    android:layout_height="53dp"
+                    android:background="@drawable/rect3"
+                    android:drawableStart="@drawable/search"
+                    android:drawablePadding="15dp"
+                    android:elevation="10dp"
+                    android:ems="10"
+                    android:hint="@string/what_do_you_want_to_order"
+                    android:inputType="text"
+                    android:letterSpacing="0.04"
+                    android:padding="10dp"
+                    android:paddingStart="20sp"
+                    android:textColorHint="#DA6317"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.491"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="193dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/viga"
+                    android:gravity="top"
+                    android:lineSpacingExtra="5sp"
+                    android:text="@string/popular_restaurant"
+                    android:textColor="#09051C"
+                    android:textSize="20sp"
+                    android:translationY="-2.25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.137"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/bottombar"
+                android:layout_width="365dp"
+                android:layout_height="55dp"
+
+                android:background="@drawable/bottom_rect"
+                android:baselineAligned="false"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:weightSum="4"
+                app:layout_constraintBottom_toBottomOf="@id/scrollView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="RtlSymmetry">
+
+                <LinearLayout
+                    android:id="@+id/HomeLayout"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bottom_button_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    tools:ignore="InefficientWeight">
+
+                    <ImageView
+                        android:id="@+id/homeimage"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:alpha="1"
+                        android:clickable="false"
+                        android:src="@drawable/home_page"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/hometext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+
+                        android:fontFamily="@font/inter_medium"
+                        android:text="@string/home"
+                        android:textColor="#09051C"
+                        android:clickable="false"
+
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ProfileLayout"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="45dp"-->
+
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="#00FFFFFF"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:paddingStart="5dp"-->
+<!--                    android:paddingEnd="5dp"-->
+<!--                    tools:ignore="InefficientWeight">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/profileimage"-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:adjustViewBounds="true"-->
+<!--                        android:alpha="0.4"-->
+<!--                        android:clickable="false"-->
+<!--                        android:src="@drawable/user"-->
+<!--                        tools:ignore="ContentDescription" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/profiletext"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:fontFamily="@font/inter_medium"-->
+<!--                        android:text="@string/profile"-->
+<!--                        android:textColor="#09051C"-->
+<!--                        android:textSize="13sp"-->
+<!--                        android:clickable="false"-->
+
+<!--                        android:visibility="gone" />-->
+<!--                </LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/FoodCartLayout"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bottom_button_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    tools:ignore="InefficientWeight">
+
+                    <ImageView
+                        android:id="@+id/cartimage"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:alpha="0.5"
+                        android:clickable="false"
+                        android:src="@drawable/cart"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/carttext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="@string/cart"
+                        android:textColor="#09051C"
+                        android:textSize="13sp"
+                        android:clickable="false"
+                         />
+                </LinearLayout>
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/FoodHistoryLayout"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="45dp"-->
+
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="#00FFFFFF"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:paddingStart="5dp"-->
+<!--                    android:paddingEnd="5dp"-->
+<!--                    tools:ignore="InefficientWeight">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/historyimage"-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:adjustViewBounds="true"-->
+<!--                        android:alpha="0.5"-->
+<!--                        android:src="@drawable/chat"-->
+<!--                        android:clickable="false"-->
+<!--                        tools:ignore="ContentDescription" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/historytext"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:fontFamily="@font/inter_medium"-->
+<!--                        android:text="@string/chat"-->
+<!--                        android:textColor="#09051C"-->
+<!--                        android:textSize="13sp"-->
+<!--                        android:clickable="false"-->
+
+<!--                        android:visibility="gone" />-->
+<!--                </LinearLayout>-->
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="145dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="15dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingStart="5dp"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <ImageView
+                android:layout_gravity="top"
+
+                android:id="@+id/foodMenu_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/food_item_card"
+                android:src="@drawable/food"
+                android:scaleType="centerCrop"
+
+                 />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/order_menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/palanquin_dark_medium"
+            android:gravity="top"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="0dp"
+            android:lineSpacingExtra="5sp"
+            android:text="menu item name"
+            android:textColor="#09051C"
+            android:textSize="24sp"
+            android:translationY="-2.25sp" />
+
+        <TextView
+            android:id="@+id/order_res_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="0dp"
+            android:alpha="0.7"
+            android:translationY="-6sp"
+            android:textSize="14sp"
+            android:fontFamily="@font/palanquin_dark_medium"
+            android:text="Restuarant name"
+            android:textColor="#3B3B3B" />
+        <TextView
+            android:id="@+id/order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sen_bold"
+            android:layout_marginTop="2dp"
+            android:gravity="bottom"
+            android:lineSpacingExtra="7sp"
+            android:text="₹5000"
+            android:textColor="#53E88B"
+            android:textSize="25sp"
+            />
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:translationX="-60dp"
+            android:layout_marginTop="80dp">
+            <ImageView
+                android:id="@+id/decbtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#ffff"
+                android:layout_gravity="center"
+
+                android:src="@drawable/decr"/>
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:text="11"
+                android:textAlignment="center"
+                android:layout_marginEnd="0dp"
+                android:textSize="20dp"
+                android:id="@+id/recqnt"/>
+
+            <ImageView
+                android:id="@+id/incbtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#ffff"
+                android:layout_gravity="center"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/incr"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
